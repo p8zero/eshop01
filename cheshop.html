@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: white;
+            color: pink;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .main-container {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .sidebar h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #343a40;
+            font-weight: 600;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 12px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #495057;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .sidebar ul li a:hover {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        .content {
+            flex-grow: 1;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background-color: white;
+            width: 250px;
+            margin: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        .product h2 {
+            font-size: 16px;
+            color: #343a40;
+            font-weight: 500;
+            margin-bottom: 10px;
+            min-height: 60px;
+            overflow: hidden;
+        }
+        .price {
+            font-size: 18px;
+            color: #e67e22;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .delivery-info {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .add-to-cart {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .add-to-cart:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Welcome to the Beauty Shop
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Product Categories</h3>
+            <ul>
+                <li><a href="#">Short Square Nails</a></li>
+                <li><a href="#">Puff Nails (Short Square & Round)</a></li>
+                <li><a href="#">Short Oval Nails</a></li>
+                <li><a href="#">Short Ladder Nails</a></li>
+                <li><a href="#">Medium Oval Nails</a></li>
+                <li><a href="#">Long Oval Nails</a></li>
+                <li><a href="#">Medium Long Ladder Nails</a></li>
+                <li><a href="#">Medium Long Square Nails</a></li>
+                <li><a href="#">Almond Nails</a></li>
+                <li><a href="#">Toe Nails</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="container">
+                <!-- Existing Products -->
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01Uwsw4t1aLP8ipyDbk_!!3946823313.jpg_q95.jpg_.webp" alt="Product 1">
+                    <h2>Hand-made nail art with love dots, cat-eye pink, whitening and fairy-like finished product</h2>
+                    <p class="price">$14.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01IQtrnR1aLP71awSdk_!!3946823313.jpg_q95.jpg_.webp" alt="Product 2">
+                    <h2>Pure color handmade cat eye wearable nails 2024 spring gentle short square nails</h2>
+                    <p class="price">$17.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01Gb5RFf1aLP8kJZkIy_!!3946823313.jpg_q95.jpg_.webp" alt="Product 3">
+                    <h2>French manicure handmade nails 2024 cat's eye high-end short style whitening</h2>
+                    <p class="price">$38.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01anTkWY1aLP6BGLbXy_!!3946823313.jpg_q95.jpg_.webp" alt="Product 4">
+                    <h2>Purely handmade cat's eye nail art, short square nail tips</h2>
+                    <p class="price">$16.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN013ShXOx1aLP8XEjeTg_!!3946823313.jpg_q95.jpg_.webp" alt="Product 5">
+                    <h2>Hand-made black cat-eye stars cool short square finished nail art</h2>
+                    <p class="price">$15.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <!-- Additional Products -->
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01nNN8DQ1aLP7M7T8l3_!!3946823313.jpg_q95.jpg_.webp" alt="Product 6">
+                    <h2>Pink cat eye nail art, pure handmade wear nail, 2024 dot light therapy</h2>
+                    <p class="price">$24.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01wS3b2d1aLP6mVUvaM_!!3946823313.jpg_q95.jpg_.webp" alt="Product 7">
+                    <h2>Handmade custom nail art, pure color cat eye 2024 ice transparent powder short nails</h2>
+                    <p class="price">$36.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01P2FbKL1aLP72x5iJx_!!3946823313.jpg_q95.jpg_.webp" alt="Product 8">
+                    <h2>Short square nail patch 2024, handmade wearable nails</h2>
+                    <p class="price">$27.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01Rsh4on1aLP8lQ1BYs_!!3946823313.jpg_q95.jpg_.webp" alt="Product 9">
+                    <h2>Cartoon cat eye nail art handmade nails, cute nude pink cat claws</h2>
+                    <p class="price">$32.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+              
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/O1CN01W2gPCc1aLP8h1quVv_!!3946823313.jpg_q95.jpg_.webp" alt="Product 10">
+                    <h2>Black starry sky nail art hand-made wear nail, high-end finished nail piece</h2>
+                    <p class="price">$32.00</p>
+                    <p class="delivery-info">Same-Day Delivery: 85281</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
